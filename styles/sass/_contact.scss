@@ -1,0 +1,39 @@
+.contact-header,
+.blog-header {
+	background-size: cover;
+}
+
+.contact-header {
+	background: url(../assets/contact-header.jpg);
+}
+
+.contact-flex-container {
+	display: flex;
+}
+
+.social-links {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-box {
+	width: 30%;
+	padding-top: 10%;
+}
+.social-links {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-form {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: $main-color;
+	padding: 7% 5% 5%;
+	position: relative;
+	bottom: 20vh;
+	box-shadow: 25px 25px 0 $hl-color;
+}

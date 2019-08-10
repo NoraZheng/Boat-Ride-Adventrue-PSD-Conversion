@@ -8,21 +8,22 @@
    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto:400,700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="./styles/style.css">
+   <script src="https://kit.fontawesome.com/01c2321f5b.js"></script>
    <title>Nora-Zheng-Blog</title>
 </head>
 
 <body>
    <header class="blog-header">
-      <div class="wrapper">
+      <div class="wrapper header-flex-container">
          <nav>
             <ul class="nav-bar">
-               <li class="nav-bar-links"><a href="./home.html">Home</a></li>
-               <li class="nav-bar-links"><a href="#about">About</a></li>
-               <li class="nav-bar-links"><a href="./blog.html">Blog</a></li>
-               <li class="nav-bar-links"><a href="./contact.html">Contact</a></li>
+               <li class="nav-bar-link"><a href="./home.html">Home</a></li>
+               <li class="nav-bar-link"><a href="#about">About</a></li>
+               <li class="nav-bar-link"><a href="./blog.html">Blog</a></li>
+               <li class="nav-bar-link"><a href="./contact.html">Contact</a></li>
             </ul>
          </nav>
-         <h1>Blog</h1>
+         <h1 class="blog-h1">Blog</h1>
       </div>
    </header>
    <main class="blog-main">
@@ -65,11 +66,11 @@
          </article>
       </div>
       <form action="" class="post-comment">
-         <label for="name" class="visuallyHidden">name</label>
-         <input type="text" name="name" id="name" placeholder="Name">
-         <label for="email">email address</label>
-         <input type="email" name="email" id="email" placeholder="Email address">
-         <label for="comment"></label>
+         <label for="name" class="visually-hidden">name</label>
+         <input type="text" name="comment-name" id="name" placeholder="Name">
+         <label for="email" class="visually-hidden">email address</label>
+         <input type="email" name="comment-email" id="email" placeholder="Email address">
+         <label for="comment" class="visually-hidden"></label>
          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
          <input type="submit" name="post-comment" value="post comment">
       </form>

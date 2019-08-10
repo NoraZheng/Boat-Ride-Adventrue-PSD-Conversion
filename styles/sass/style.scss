@@ -1,8 +1,12 @@
-@import "utils";
-@import "setup";
-@import "typography";
-@import "components";
-@import "layout";
-@import "home";
-@import "contact";
-@import "blog"
+@import 'utils';
+@import 'setup';
+@import 'typography';
+@import 'components';
+@import 'layout';
+@import 'home';
+@import 'contact';
+@import 'blog';
+
+// * {
+// 	border: 1px red solid;
+// }
