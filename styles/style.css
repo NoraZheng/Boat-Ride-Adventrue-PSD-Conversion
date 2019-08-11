@@ -214,125 +214,6 @@ h3 {
   font-weight: 400;
 }
 
-.home-h1 {
-  color: #fdd908;
-}
-
-.contact-h1,
-.blog-h1 {
-  color: #fff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.nav-bar-link a {
-  color: #fff;
-  padding: 0.5rem;
-  font-weight: 700;
-}
-
-.fab {
-  font-size: 1.5rem;
-  color: #0d457f;
-}
-
-input[name='message-name'],
-input[name='message-email'],
-textarea[name='message'] {
-  color: #fff;
-}
-
-.aside-heading {
-  color: #fdd908;
-}
-
-footer {
-  color: #0d457f;
-}
-
-input {
-  padding: 0.75rem;
-}
-
-input[type='text'],
-input[type='email'] {
-  width: 45%;
-  border: none;
-  border: 2px rgba(0, 0, 0, 0) solid;
-  border-bottom: 2px #fdd908 solid;
-  background: transparent;
-}
-
-input[type='text']:focus,
-input[type='email']:focus,
-textarea:focus {
-  border: 2px dashed #fdd908;
-}
-
-input[type='submit'] {
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: 400;
-  border: none;
-}
-
-input[name='message-submit'],
-button {
-  background: #fdd908;
-  color: #0d457f;
-  border: 2px solid #fdd908;
-}
-
-input[name='message-submit']:hover,
-button:hover,
-input[name='message-submit']:focus,
-button:focus {
-  border: 2px dashed #0d457f;
-  background-color: #fff;
-}
-
-input[name='post-comment'] {
-  color: #fdd908;
-  background: #0d457f;
-  border: 2px solid #0d457f;
-}
-
-input[name='post-comment']:hover,
-input[name='post-comment']:focus {
-  background-color: #fff;
-  color: #0d457f;
-  border: 2px dashed;
-}
-
-button {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-}
-
-textarea {
-  padding: 1rem;
-  margin: 5% 0;
-  width: 100%;
-  background: transparent;
-  border: 2px #fdd908 solid;
-}
-
-.nav-bar-link:hover a {
-  border-bottom: 2px solid #fdd908;
-}
-
-.nav-bar-link a:focus {
-  border-bottom: 2px solid #fdd908;
-}
-
-.social-icon:hover i,
-.social-link:focus i {
-  color: #fdd908;
-}
-
 .wrapper {
   max-width: 1280px;
   width: 85%;
@@ -343,6 +224,31 @@ textarea {
 .news-wrapper {
   margin: 0 auto;
   max-width: 1440px;
+}
+
+.nav-bar {
+  width: 30%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -368,50 +274,70 @@ p {
   margin-top: 0;
 }
 
-header {
-  background-size: cover;
-  background-repeat: no-repeat;
+input {
+  padding: 0.75rem;
 }
 
-.home-header {
-  height: 90vh;
+textarea {
+  padding: 1rem;
+  margin: 5% 0;
+  width: 100%;
+  background: transparent;
+  border: 2px #fdd908 solid;
 }
 
-.contact-header,
-.blog-header {
-  height: 70vh;
+input[type='text'],
+input[type='email'] {
+  width: 45%;
+  border: none;
+  border: 2px rgba(0, 0, 0, 0) solid;
+  border-bottom: 2px #fdd908 solid;
+  background: transparent;
 }
 
-.nav-bar {
-  width: 30%;
-  min-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border: 2px dashed #fdd908;
 }
 
-.header-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+input[type='submit'] {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+}
+
+.nav-bar-link a {
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.nav-bar-link:hover a {
+  border-bottom: 2px solid #fdd908;
+}
+
+.nav-bar-link a:focus {
+  border-bottom: 2px solid #fdd908;
 }
 
 footer {
   padding: 10px 0;
   text-align: center;
   background: #fdd908;
+  color: #0d457f;
 }
 
 .home-header {
-  background: url(../assets/home-header.jpg);
+  background: url(../assets/home-header.jpg) no-repeat;
   position: relative;
+  background-size: cover;
+  height: 90vh;
+}
+
+.home-h1 {
+  color: #fdd908;
 }
 
 .home-header-flex-container {
@@ -535,6 +461,12 @@ footer {
   text-align: left;
 }
 
+.read-more {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
 .news-text1 {
   padding: 10% 0 10% 12.5%;
 }
@@ -608,29 +540,21 @@ footer {
   width: 30%;
 }
 
-.contact-header,
-.blog-header {
+.contact-header {
+  background: url(../assets/contact-header.jpg) no-repeat;
   background-size: cover;
+  height: 70vh;
 }
 
-.contact-header {
-  background: url(../assets/contact-header.jpg);
+.contact-h1,
+.blog-h1 {
+  color: #fff;
 }
 
 .contact-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.social-links {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .contact-box {
@@ -646,6 +570,16 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.fab {
+  font-size: 1.5rem;
+  color: #0d457f;
+}
+
+.social-icon:hover i,
+.social-link:focus i {
+  color: #fdd908;
 }
 
 .contact-form {
@@ -666,8 +600,31 @@ footer {
           box-shadow: 25px 25px 0 #fdd908;
 }
 
+input[name='message-submit'],
+button {
+  background: #fdd908;
+  color: #0d457f;
+  border: 2px solid #fdd908;
+}
+
+input[name='message-name'],
+input[name='message-email'],
+textarea[name='message'] {
+  color: #fff;
+}
+
+input[name='message-submit']:hover,
+.read-more:hover,
+input[name='message-submit']:focus,
+.read-more:focus {
+  border: 2px dashed #0d457f;
+  background-color: #fff;
+}
+
 .blog-header {
-  background: url(../assets/blog-header.jpg);
+  background: url(../assets/blog-header.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
 }
 
 .blog-body {
@@ -699,6 +656,10 @@ footer {
 
 .aside-text-box {
   margin-bottom: 20%;
+}
+
+.aside-heading {
+  color: #fdd908;
 }
 
 .aside-image-box {
@@ -794,4 +755,17 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+input[name='post-comment'] {
+  color: #fdd908;
+  background: #0d457f;
+  border: 2px solid #0d457f;
+}
+
+input[name='post-comment']:hover,
+input[name='post-comment']:focus {
+  background-color: #fff;
+  color: #0d457f;
+  border: 2px dashed;
 }

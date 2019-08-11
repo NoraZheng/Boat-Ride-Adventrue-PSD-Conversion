@@ -1,5 +1,7 @@
 .blog-header {
-	background: url(../assets/blog-header.jpg);
+	background: url(../assets/blog-header.jpg) no-repeat;
+	background-size: cover;
+	height: 70vh;
 }
 
 .blog-body {
@@ -22,6 +24,10 @@
 
 .aside-text-box {
 	margin-bottom: 20%;
+}
+
+.aside-heading {
+	color: $hl-color;
 }
 
 .aside-image-box {
@@ -90,4 +96,16 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+input[name='post-comment'] {
+	color: $hl-color;
+	background: $main-color;
+	border: 2px solid $main-color;
+}
+
+input[name='post-comment']:hover,
+input[name='post-comment']:focus {
+	background-color: $white;
+	color: $main-color;
+	border: 2px dashed;
 }

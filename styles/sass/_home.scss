@@ -1,8 +1,12 @@
 .home-header {
-	background: url(../assets/home-header.jpg);
+	background: url(../assets/home-header.jpg) no-repeat;
 	position: relative;
+	background-size: cover;
+	height: 90vh;
 }
-
+.home-h1 {
+	color: $hl-color;
+}
 .home-header-flex-container {
 	height: 100%;
 	display: flex;
@@ -81,6 +85,12 @@
 	flex-direction: column-reverse;
 
 	text-align: left;
+}
+
+.read-more {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	padding: 0.5rem;
 }
 
 .news-text1 {
