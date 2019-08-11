@@ -12,7 +12,7 @@
    <title>Nora-Zheng-Blog</title>
 </head>
 
-<body>
+<body class="blog-body">
    <header class="blog-header">
       <div class="wrapper header-flex-container">
          <nav>
@@ -26,68 +26,103 @@
          <h1 class="blog-h1">Blog</h1>
       </div>
    </header>
-   <main class="blog-main">
-      <article class="blog">
-         <div class="blog-image-container"><img src="./assets/blog-post-image.jpg"
-               alt="deck of a white boat floating on turqoise water under sunshine"></div>
-         <div class="blog-text-box">
-            <h2>next destination</h2>
-            <p class="blog-text">Monday October 30, 2019 by Sularie</p>
-            <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor molestias sit
-               optio odio aliquam, obcaecati quis corrupti itaque praesentium dolores vero dolorum nesciunt esse
-               aliquid. Iure inventore impedit possimus!</p>
-            <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, placeat
-               reprehenderit incidunt vitae minus quasi est animi libero vel quisquam eos tempore? Explicabo minima
-               optio, temporibus quas repudiandae molestiae amet est deserunt magni vel ab. Vel accusantium reiciendis
-               voluptatibus unde!</p>
-            <p class="blog-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A impedit, numquam magni
-               accusantium, consequuntur modi reprehenderit omnis eos sapiente laborum suscipit. Nostrum corrupti illo,
-               fuga alias sequi ratione explicabo officia nisi suscipit et voluptate aut, ex totam dolorem saepe?
-               Dolorum, provident tempora assumenda dolor ipsum commodi nobis libero incidunt exercitationem.</p>
-            <p class="blog-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deleniti cumque deserunt
-               eos accusamus excepturi adipisci veritatis. Rerum, asperiores deleniti.</p>
+
+   <main class="blog-main blog-wrapper blog-flex-container">
+      <aside class="mission">
+         <div class="aside-image-box">
+            <img src="./assets/blog-side-image.jpg" alt="close-up of the deck of a wooden boat under sunset"
+               class="aside-image">
          </div>
-      </article>
-      <div class="comments">
-         <h2>comments:</h2>
-         <article class="comment">
-            <div class="avatar-box"><img src="./assets/comment-1.jpg" alt="user profile picture" class="avatar"></div>
-            <div class="comment-text-box">
-               <p class="comment-title"></p>
-               <p></p>
+         <div class="aside-text-box">
+            <h3 class="aside-heading">our mission</h3>
+            <p class="aside-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos provident
+               reiciendis
+               quis.
+            </p>
+         </div>
+         <div class="aside-text-box">
+            <h3 class="aside-heading">recent posts</h3>
+            <ul class="recent-posts">
+               <li class="recent-post">Lorem ipsum dolor sit</li>
+               <li class="recent-post">Sit amet consectetur ut</li>
+               <li class="recent-post">Adipisicing elit non quisquam</li>
+               <li class="recent-post">Sequi nemo dolore quis</li>
+            </ul>
+         </div>
+      </aside>
+      <section class="blog-box">
+         <article class="blog">
+
+            <div class="blog-image-box">
+               <img class="blog-image" src="./assets/blog-post-image.jpg"
+                  alt="deck of a white boat floating on turqoise water under sunshine">
+            </div>
+
+            <div class="blog-text-box">
+               <h2 class="blog-title">next destination</h2>
+               <p class="blog-text">Monday October 30, 2019 by Sularie</p>
+               <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor molestias
+                  sit
+                  optio odio aliquam, obcaecati quis corrupti itaque praesentium dolores vero dolorum nesciunt
+                  esse
+                  aliquid. Iure inventore impedit possimus!</p>
+               <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, placeat
+                  reprehenderit incidunt vitae minus quasi est animi libero vel quisquam eos tempore? Explicabo
+                  minima
+                  optio, temporibus quas repudiandae molestiae amet est deserunt magni vel ab. Vel accusantium
+                  reiciendis
+                  voluptatibus unde!</p>
+               <p class="blog-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A impedit, numquam
+                  magni
+                  accusantium, consequuntur modi reprehenderit omnis eos sapiente laborum suscipit. Nostrum
+                  corrupti
+                  illo,
+                  fuga alias sequi ratione explicabo officia nisi suscipit et voluptate aut, ex totam dolorem
+                  saepe?
+                  Dolorum, provident tempora assumenda dolor ipsum commodi nobis libero incidunt exercitationem.
+               </p>
+               <p class="blog-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deleniti cumque
+                  deserunt
+                  eos accusamus excepturi adipisci veritatis. Rerum, asperiores deleniti.</p>
             </div>
          </article>
-         <article class="comment">
-            <div class="avatar-box"><img src="./assets/comment-2.jpg" alt="user profile picture" class="avatar"></div>
-            <div class="comment-text-box">
-               <p class="comment-title"></p>
-               <p></p>
-            </div>
-         </article>
-      </div>
-      <form action="" class="post-comment">
-         <label for="name" class="visually-hidden">name</label>
-         <input type="text" name="comment-name" id="name" placeholder="Name">
-         <label for="email" class="visually-hidden">email address</label>
-         <input type="email" name="comment-email" id="email" placeholder="Email address">
-         <label for="comment" class="visually-hidden"></label>
-         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-         <input type="submit" name="post-comment" value="post comment">
-      </form>
+         <section class="comments">
+            <h2>comments:</h2>
+            <article class="comment">
+               <div class="avatar-box"><img src="./assets/comment-1.jpg" alt="user profile picture" class="avatar">
+               </div>
+               <div class="comment-text-box">
+                  <p class="comment-title">Tuedsay October 8th, 2019 by Ali</p>
+                  <p> Nobis, beatae! Corrupti eos sit
+                     doloribus libero repellendus natus reprehenderit doloremque atque iusto magni? Tenetur
+                     voluptas
+                     blanditiis eum, dolorum non atque nisi voluptatum quis in natus consequuntur culpa rerum ut
+                     ex
+                     sit repudiandae officia illo cupiditate vel? </p>
+               </div>
+            </article>
+            <article class="comment">
+               <div class="avatar-box"><img src="./assets/comment-2.jpg" alt="user profile picture" class="avatar">
+               </div>
+               <div class="comment-text-box">
+                  <p class="comment-title">Wednesday October 9th, 2019 by Lisa</p>
+                  <p>Ab repellat amet a molestias totam minima enim ipsa eaque, suscipit ducimus
+                     molestiae, assumenda velit architecto corporis natus nam. Nam, animi.</p>
+               </div>
+            </article>
+         </section>
+         <form action="" class="post-comment">
+            <label for="name" class="visually-hidden">name</label>
+            <input type="text" name="comment-name" id="name" placeholder="Name">
+            <label for="email" class="visually-hidden">email address</label>
+            <input type="email" name="comment-email" id="email" placeholder="Email address">
+            <label for="comment" class="visually-hidden"></label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+            <input type="submit" name="post-comment" value="post comment">
+         </form>
+      </section>
    </main>
-   <aside class="mission">
-      <img src="./assets/blog-side-image.jpg" alt="close-up of the deck of a wooden boat under sunset"
-         class="aside-image">
-      <h3 class="aside-heading">our mission</h3>
-      <p class="aside-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos provident reiciendis quis.</p>
-      <h3 class="aside-heading">recent posts</h3>
-      <ul class="recent-posts">
-         <li class="recent-post">Lorem ipsum dolor sit</li>
-         <li class="recent-post">Sit amet consectetur ut</li>
-         <li class="recent-post">Adipisicing elit non quisquam</li>
-         <li class="recent-post">Sequi nemo dolore quis</li>
-      </ul>
-   </aside>
+
    <footer>Copyright &#169; 2019 HackerYou</footer>
 
 

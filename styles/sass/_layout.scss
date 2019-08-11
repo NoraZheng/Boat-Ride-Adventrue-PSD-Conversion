@@ -1,7 +1,12 @@
 .wrapper {
 	max-width: 1280px;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
+}
+
+.blog-wrapper {
+	margin: 0 auto;
+	max-width: 1280px;
 }
 main {
 	background: $bg-color;
@@ -12,16 +17,21 @@ ul {
 }
 
 nav {
-	padding: 3rem 0;
+	padding: 5% 0;
+}
+
+p {
+	margin-top: 0;
 }
 .contact-header,
 .blog-header {
-	min-height: 70vh;
+	height: 70vh;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .nav-bar {
-	width: 35%;
+	width: 30%;
 	min-width: 300px;
 	display: flex;
 	justify-content: space-between;
@@ -37,7 +47,7 @@ nav {
 }
 
 footer {
-	padding: 0.5rem;
+	padding: 1%;
 	text-align: center;
 	background: $hl-color;
 }

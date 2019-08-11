@@ -1,3 +1,85 @@
 .blog-header {
 	background: url(../assets/blog-header.jpg);
 }
+
+.blog-body {
+	background-color: $bg-color;
+}
+
+.blog-flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.mission {
+	background-color: $main-color;
+	flex: 1 0 30%;
+	max-width: 30%;
+	margin: 5%;
+	padding: 0 2.5%;
+	color: white;
+}
+
+.aside-text-box {
+	margin-bottom: 20%;
+}
+
+.aside-image-box {
+	position: relative;
+	width: 140%;
+	right: 40%;
+	top: -2vh;
+}
+.aside-image {
+	width: 100%;
+}
+
+.recent-posts {
+	list-style: disc inside;
+}
+.blog-box {
+	flex: 1 0 60%;
+	max-width: 60%;
+}
+
+.blog-title {
+	margin-top: 0;
+}
+.blog {
+	border-left: 4px solid $hl-color;
+	border-bottom: 4px solid $hl-color;
+}
+.blog-text-box {
+	padding: 0 10% 10% 10%;
+}
+.blog-image-box {
+	position: relative;
+	left: 20px;
+	top: -15vh;
+	width: calc(100% - 20px);
+	max-width: 780px;
+}
+.blog-image {
+	width: 100%;
+	box-shadow: -22px 32px 0 $hl-color;
+}
+.comments {
+	padding: 5% 10% 0 10%;
+}
+.comment {
+	display: flex;
+	padding: 5% 0 0;
+}
+.comment-text-box {
+	padding-left: 5%;
+}
+.comment-title {
+	font-weight: 700;
+	color: $main-color;
+}
+.post-comment {
+	padding: 5% 10% 10% 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

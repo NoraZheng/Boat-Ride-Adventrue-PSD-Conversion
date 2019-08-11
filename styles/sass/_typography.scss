@@ -2,6 +2,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
 	line-height: 1.5rem;
+	font-weight: 400;
 }
 
 h1,
@@ -14,7 +15,18 @@ input[type='submit'] {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+	color: $main-color;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 .contact-h1,
@@ -45,6 +57,10 @@ input[name='message-name'],
 input[name='message-email'],
 textarea[name='message'] {
 	color: white;
+}
+
+.aside-heading {
+	color: $hl-color;
 }
 
 footer {

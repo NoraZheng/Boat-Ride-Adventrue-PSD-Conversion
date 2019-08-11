@@ -12,12 +12,19 @@ input[type='email'] {
 
 input[type='submit'] {
 	width: 100%;
+	font-size: 1.2rem;
+	font-weight: 400;
 	border: none;
 }
 
 input[name='message-submit'] {
 	background: $hl-color;
 	color: $main-color;
+}
+
+input[name='post-comment'] {
+	color: $hl-color;
+	background: $main-color;
 }
 textarea {
 	padding: 1rem;
