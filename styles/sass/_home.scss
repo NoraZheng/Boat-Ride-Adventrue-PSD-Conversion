@@ -1,0 +1,143 @@
+.home-header {
+	background: url(../assets/home-header.jpg);
+	position: relative;
+}
+
+.home-header-flex-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.home-header-image-box {
+	position: absolute;
+	right: 0;
+	bottom: -20%;
+	width: 55%;
+	max-width: 800px;
+}
+
+.highlights {
+	padding: 15% 0 10%;
+}
+
+.highlight-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.highlight {
+	width: 49%;
+	display: flex;
+	margin-bottom: 5%;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.highlight-icon {
+	flex: 1 0 15%;
+	max-width: 30px;
+	height: 30px;
+	border: 25px $hl-color solid;
+	border-radius: 50%;
+	font-size: 1.8rem;
+	color: $main-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.fas {
+	margin: 0 auto;
+}
+
+.highlight-text-box {
+	flex: 1 0 80%;
+	padding: 2% 0 0 5%;
+}
+
+.news {
+	background-color: $main-color;
+	color: $white;
+}
+.news-flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-post {
+	display: flex;
+	position: relative;
+	width: 45%;
+}
+.news-post1 {
+	flex-direction: column;
+	text-align: right;
+}
+
+.news-post2 {
+	flex-direction: column-reverse;
+
+	text-align: left;
+}
+
+.news-text1 {
+	padding: 10% 0 10% 12.5%;
+}
+.news-text2 {
+	padding: 10% 12.5% 10% 0%;
+}
+
+.news-image1 {
+	position: relative;
+	top: -10%;
+	box-shadow: 20px 20px 0 $hl-color;
+}
+
+.news-image2 {
+	position: relative;
+	bottom: -10%;
+	box-shadow: -20px 20px 0 $hl-color;
+}
+
+.extra {
+	padding: 15% 0 10%;
+	max-width: 964px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.win-flex-container {
+	display: flex;
+	justify-content: center;
+	padding: 10% 0;
+}
+
+.win-image-box {
+	width: 30%;
+	max-width: 300px;
+}
+.win-image {
+	box-shadow: -20px 20px 0 $hl-color;
+}
+
+.win-text-box {
+	padding-left: 5%;
+	width: 70%;
+}
+
+.gallery {
+	background: $main-color;
+	padding: 5% 0;
+}
+.gallery-flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery-photo-container {
+	max-width: 400px;
+	width: 30%;
+}

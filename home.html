@@ -15,55 +15,64 @@
 
 <body>
    <header class="home-header">
-      <div class="wrapper">
+      <div class="wrapper  home-header-flex-container">
          <nav>
             <ul class="nav-bar">
-               <li class="nav-bar-links"><a href="./home.html">Home</a></li>
-               <li class="nav-bar-links"><a href="#about">About</a></li>
-               <li class="nav-bar-links"><a href="./blog.html">Blog</a></li>
-               <li class="nav-bar-links"><a href="./contact.html">Contact</a></li>
+               <li class="nav-bar-link"><a href="./home.html">Home</a></li>
+               <li class="nav-bar-link"><a href="#about">About</a></li>
+               <li class="nav-bar-link"><a href="./blog.html">Blog</a></li>
+               <li class="nav-bar-link"><a href="./contact.html">Contact</a></li>
             </ul>
          </nav>
-         <h1 class="home-title">boat ride adventures</h1>
-         <div><img src="./assets/home-box-header.png" alt="a white cruise ship sailing on blue, wavy water"></div>
+         <h1 class="home-h1">boat ride<br>adventures</h1>
+      </div>
+      <!-- end of header wrapper -->
+      <div class="home-header-image-box">
+         <img class="home-header-image" src="./assets/home-box-header.png"
+            alt="a white cruise ship sailing on blue, wavy water">
       </div>
    </header>
-   <main class="home-main">
 
+   <main class="home-main">
       <section class="highlights">
          <div class="wrapper">
             <ul class="highlight-list">
                <li class="highlight">
-                  <span class="highlight-icon"><i class="fas fa-map-marker-alt"></i></span>
-                  <div class="highlight-textbox">
+                  <div class="highlight-icon"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="highlight-text-box">
                      <h2 class="highlight-title">new destinations</h2>
-                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+
+                     <p class="highlight-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor
+                        erat ac sagittis
                         mattis. Mauris tempus velit sem. sit amet imperdiet dolor palcerat.</p>
                   </div>
                </li>
                <li class="highlight">
-                  <span class="highlight-icon"><i class="fas fa-users"></i></span>
-                  <div class="highlight-textbox">
+                  <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                  <div class="highlight-text-box">
                      <h2 class="highlight-title">community</h2>
-                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                     <p class="highlight-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor
+                        erat ac sagittis
                         mattis. Mauris tempus velit
                         sem. sit amet imperdiet dolor palcerat.</p>
                   </div>
                </li>
                <li class="highlight">
-                  <span class="highlight-icon"><i class="fas fa-file"></i></span>
-                  <div class="highlight-textbox">
+                  <div class="highlight-icon"><i class="fas fa-file"></i></div>
+                  <div class="highlight-text-box">
                      <h2 class="highlight-title">blog</h2>
-                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                     <p class="highlight-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor
+                        erat ac sagittis
                         mattis. Mauris tempus velit
                         sem. sit amet imperdiet dolor palcerat.</p>
                   </div>
                </li>
                <li class="highlight">
-                  <span class="highlight-icon"><i class="fas fa-phone"></i></span>
-                  <div class="highlight-textbox">
+                  <div class="highlight-icon"><i class="fas fa-phone"></i></div>
+                  <div class="highlight-text-box">
                      <h2 class="highlight-title">get in touch</h2>
-                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                     <p class="highlight-text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor
+                        erat ac sagittis
                         mattis. Mauris tempus velit
                         sem. sit amet imperdiet dolor palcerat.</p>
                   </div>
@@ -75,22 +84,11 @@
       <!--end of highlights section-->
 
       <section class="news">
-         <div class="wrapper">
-            <article class="news-post">
-               <div class="news-inage news-image1"><img src="./assets/left-image.jpg"
+         <div class="news-wrapper news-flex-container">
+            <article class="news-post news-post1">
+               <div class="news-image news-image1"><img src="./assets/left-image.jpg"
                      alt="front view of a white cruise ship sailing on open water"></div>
-               <div class="news-text">
-                  <h3 class="news-title">our programs</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quaerat cumque nisi, laudantium
-                     porro aliquid, quos totam eligendi, neque qui in sequi numquam impedit sed deserunt quod magni
-                     obcaecati error.</p>
-                  <button class="read-more">read more</button>
-               </div>
-            </article>
-            <article class="news-post">
-               <div class="news-inage news-image2"><img src="./assets/right-image.jpg"
-                     alt="bird's eye view of a boat's deck on turqoise clear water"></div>
-               <div class="news-text">
+               <div class="news-text news-text1">
                   <h3 class="news-title">new locations</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quaerat cumque nisi, laudantium
                      porro aliquid, quos
@@ -99,25 +97,40 @@
                   <button class="read-more">read more</button>
                </div>
             </article>
+            <article class="news-post news-post2">
+               <div class="news-image news-image2"><img src="./assets/right-image.jpg"
+                     alt="bird's eye view of a boat's deck on turqoise clear water"></div>
+               <div class="news-text news-text2">
+                  <h3 class="news-title">our programs</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quaerat cumque nisi, laudantium
+                     porro aliquid, quos totam eligendi, neque qui in sequi numquam impedit sed deserunt quod magni
+                     obcaecati error.</p>
+                  <button class="read-more">read more</button>
+               </div>
+
+            </article>
          </div>
-         <!-- end of news wrapper -->
       </section>
       <!-- end of news section -->
 
+
       <section class="extra">
+         <!-- <div class="wrapper"> -->
          <h2 class="highlight-title">extra vacation days?</h2>
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis mollitia omnis, nam vero cum
-            possimus porro, asperiores voluptate expedita cumque rerum molestiae delectus. Nam commodi aut ea adipisci
-            doloremque illum atque deleniti sequi delectus ipsum aliquam tenetur beatae, mollitia, obcaecati dolores!
+            possimus porro, asperiores voluptate expedita cumque rerum molestiae delectus. Nam commodi aut eam dolor sit
+            amet consectetur, atque deleniti sequi delectus ipsum aliquam mollitia, asperiores voluptate
+            expedita cumque rerum molestiae obcaecati equi delectus ipsum aliquam tenetur beatae mollitia dolores!
             Quidem, iusto explicabo.</p>
          <button class="read-more">find out more</button>
+         <!-- </div> -->
       </section>
       <section class="win">
          <div class="banner"><img src="./assets/banner.jpg"
                alt="people rowing in small boats on a turqoise lake surround by mountains"></div>
-         <div class="wrapper">
-            <div>
-               <img src="./assets/small-box.jpg"
+         <div class="wrapper win-flex-container">
+            <div class="win-image-box">
+               <img class="win-image" src="./assets/small-box.jpg"
                   alt="a person with long brown hair wearing a black fedora and white fur coat, looking at a glacier landscape">
             </div>
             <div class="win-text-box">
@@ -125,7 +138,8 @@
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deserunt optio consectetur quidem
                   quis minus distinctio exercitationem porro alias, at eveniet reiciendis eius excepturi facilis
                   error sapiente similique facere incidunt deleniti debitis quibusdam corporis laborum quam
-                  recusandae. Nemo ipsam voluptas ipsum maiores, nisi ea? Deleniti quia autem non necessitatibus
+                  recusandae. Dadipisicing elit. Consectetur quasi incidunt beatae corporis delectus illum?
+                  doloremque illum emo ipsam voluptas ipsum maiores, nisi ea? Deleniti quia autem non necessitatibus
                   voluptatibus atque odit. Quidem est libero adipisci pariatur officia ad expedita minus dolorum,
                   nesciunt fugit ipsa a natus autem eaque corporis.</p>
                <button class="read-more">find out more</button>
@@ -138,7 +152,7 @@
    </main>
    <aside class="gallery">
       <div class="wrapper">
-         <ul class="gallery-photos">
+         <ul class="gallery-photos  gallery-flex-container">
             <li class="gallery-photo-container"><img src="./assets/gallery-image-1.jpg" alt=""></li>
             <li class="gallery-photo-container"><img src="./assets/gallery-image-2.jpg" alt=""></li>
             <li class="gallery-photo-container"><img src="./assets/gallery-image-3.jpg" alt=""></li>

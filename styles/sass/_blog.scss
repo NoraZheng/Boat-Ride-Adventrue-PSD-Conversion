@@ -13,8 +13,8 @@
 }
 .mission {
 	background-color: $main-color;
-	flex: 1 0 30%;
-	max-width: 30%;
+	flex: 1 0 25%;
+	max-width: 25%;
 	margin: 5%;
 	padding: 0 2.5%;
 	color: white;
@@ -44,6 +44,7 @@
 
 .blog-title {
 	margin-top: 0;
+	margin-bottom: 1.5rem;
 }
 .blog {
 	border-left: 4px solid $hl-color;
@@ -57,7 +58,7 @@
 	left: 20px;
 	top: -15vh;
 	width: calc(100% - 20px);
-	max-width: 780px;
+	max-width: 830px;
 }
 .blog-image {
 	width: 100%;
@@ -69,9 +70,16 @@
 .comment {
 	display: flex;
 	padding: 5% 0 0;
+	justify-content: space-between;
+}
+
+.avatar-box {
+	flex: 1 0 15%;
+	max-width: 90px;
 }
 .comment-text-box {
 	padding-left: 5%;
+	flex: 1 0 85%;
 }
 .comment-title {
 	font-weight: 700;
