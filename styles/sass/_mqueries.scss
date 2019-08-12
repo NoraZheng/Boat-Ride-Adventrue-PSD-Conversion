@@ -123,6 +123,9 @@
 	.win-image-box {
 		display: none;
 	}
+	.win-text-box {
+		padding: 0;
+	}
 	.gallery-photo-container1 {
 		display: none;
 	}
@@ -132,6 +135,9 @@
 }
 
 @media (max-width: 440px) {
+	h1 {
+		font-size: 2.8rem;
+	}
 	.highlight {
 		text-align: center;
 		flex-direction: column;
