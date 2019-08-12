@@ -22,7 +22,10 @@
 		display: none;
 	}
 	.home-header {
-		height: 55vh;
+		height: initial;
+	}
+	.blog-header {
+		height: initial;
 	}
 
 	.highlights {
@@ -48,8 +51,8 @@
 }
 
 @media (max-width: 768px) {
-	html {
-		font-size: 14px;
+	h1 {
+		text-align: center;
 	}
 	.wrapper {
 		width: 92.5%;
@@ -58,11 +61,66 @@
 		width: 100%;
 		justify-content: space-around;
 	}
+
+	.blog-flex-container {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.mission {
+		max-width: 95%;
+		background: none;
+		display: flex;
+		justify-content: space-around;
+	}
+	.aside-image-box {
+		display: none;
+	}
+	.aside-text-box {
+		background: linear-gradient($mc-tp, $mc-tp),
+			url(../assets/blog-side-image.jpg);
+		flex: 1 0 50%;
+		max-width: 48%;
+		padding: 2.5%;
+		margin-bottom: 0;
+	}
+
+	.blog-box {
+		max-width: 95%;
+	}
+	.blog {
+		border: none;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.blog-image-box {
+		position: initial;
+		width: 80%;
+		margin: 0 auto;
+		padding: 5%;
+		border-bottom: 4px solid $hl-color;
+	}
+	.blog-image {
+		box-shadow: none;
+	}
+
+	.blog-text-box {
+		padding: 10% 5% 0;
+	}
+	.blog-title,
+	.blog-text1,
+	.comments-title {
+		text-align: center;
+	}
+	.comments,
+	.post-comment {
+		padding: 5%;
+	}
 }
 
 @media (max-width: 652px) {
 	h1 {
-		text-align: center;
+		font-size: 4rem;
 	}
 	.highlight-list {
 		justify-content: center;
@@ -85,17 +143,40 @@
 	}
 }
 
+@media (max-width: 540px) {
+	html {
+		letter-spacing: 0;
+	}
+	.mission {
+		background: linear-gradient($mc-tp, $mc-tp),
+			url(../assets/blog-side-image.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 2.5%;
+		width: 50%;
+		min-width: 255px;
+	}
+	.aside-text-box {
+		background: none;
+		max-width: 100%;
+		padding: none;
+	}
+}
+
 @media (max-width: 480px) {
 	label.bar-menu {
 		display: block;
 	}
 
+	.header-flex-container {
+		justify-content: space-between;
+	}
 	.nav-bar {
 		display: none;
 	}
-	.home-header {
-		height: 40vh;
-	}
+
 	h1 {
 		font-size: 3rem;
 	}
@@ -132,6 +213,11 @@
 	.gallery-photo-container {
 		width: 48%;
 	}
+	input[name='comment-name'],
+	input[name='comment-email'] {
+		width: 100%;
+		margin-top: 1rem;
+	}
 }
 
 @media (max-width: 440px) {
@@ -148,5 +234,14 @@
 	}
 	.highlight-icon {
 		flex: inherit;
+	}
+	.comments {
+		padding: 5% 2%;
+	}
+	.comment {
+		flex-direction: column;
+	}
+	.avatar-box {
+		padding: 0 0 5% 5%;
 	}
 }

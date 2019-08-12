@@ -57,12 +57,13 @@
 	border-bottom: 4px solid $hl-color;
 }
 .blog-text-box {
+	margin-top: -5%;
 	padding: 0 10% 10% 10%;
 }
 .blog-image-box {
 	position: relative;
 	left: 20px;
-	top: -15vh;
+	top: -20vh;
 	width: calc(100% - 20px);
 	max-width: 830px;
 }
