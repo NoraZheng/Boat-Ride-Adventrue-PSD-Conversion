@@ -17,6 +17,17 @@
    <header class="home-header">
       <div class="wrapper  home-header-flex-container">
          <nav>
+            <label class="bar-menu" for="bar-menu">
+               <span class="sr-only">navigation menu</span>
+               <i class="fas fa-bars"></i>
+            </label>
+            <input name="bar-menu" class="bar-menu" id="bar-menu" type="checkbox">
+            <ul class="bar-menu bar-menu-links">
+               <li class="bar-menu-link"><a href="./index.html">Home</a></li>
+               <li class="bar-menu-link"><a href="#about">About</a></li>
+               <li class="bar-menu-link"><a href="./blog.html">Blog</a></li>
+               <li class="bar-menu-link"><a href="./contact.html">Contact</a></li>
+            </ul>
             <ul class="nav-bar">
                <li class="nav-bar-link"><a href="./index.html">Home</a></li>
                <li class="nav-bar-link"><a href="#about">About</a></li>
@@ -115,15 +126,16 @@
 
 
       <section class="extra">
-         <!-- <div class="wrapper"> -->
-         <h2 class="highlight-title">extra vacation days?</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis mollitia omnis, nam vero cum
-            possimus porro, asperiores voluptate expedita cumque rerum molestiae delectus. Nam commodi aut eam dolor sit
-            amet consectetur, atque deleniti sequi delectus ipsum aliquam mollitia, asperiores voluptate
-            expedita cumque rerum molestiae obcaecati equi delectus ipsum aliquam tenetur beatae mollitia dolores!
-            Quidem, iusto explicabo.</p>
-         <button class="read-more">find out more</button>
-         <!-- </div> -->
+         <div class="wrapper">
+            <h2 class="highlight-title">extra vacation days?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis mollitia omnis, nam vero cum
+               possimus porro, asperiores voluptate expedita cumque rerum molestiae delectus. Nam commodi aut eam dolor
+               sit
+               amet consectetur, atque deleniti sequi delectus ipsum aliquam mollitia, asperiores voluptate
+               expedita cumque rerum molestiae obcaecati equi delectus ipsum aliquam tenetur beatae mollitia dolores!
+               Quidem, iusto explicabo.</p>
+            <button class="read-more">find out more</button>
+         </div>
       </section>
       <section class="win">
          <div class="banner"><img src="./assets/banner.jpg"
@@ -153,9 +165,12 @@
    <aside class="gallery">
       <div class="wrapper">
          <ul class="gallery-photos  gallery-flex-container">
-            <li class="gallery-photo-container"><img src="./assets/gallery-image-1.jpg" alt=""></li>
-            <li class="gallery-photo-container"><img src="./assets/gallery-image-2.jpg" alt=""></li>
-            <li class="gallery-photo-container"><img src="./assets/gallery-image-3.jpg" alt=""></li>
+            <li class="gallery-photo-container gallery-photo-container1"><img src="./assets/gallery-image-1.jpg" alt="">
+            </li>
+            <li class="gallery-photo-container gallery-photo-container2"><img src="./assets/gallery-image-2.jpg" alt="">
+            </li>
+            <li class="gallery-photo-container gallery-photo-container3"><img src="./assets/gallery-image-3.jpg" alt="">
+            </li>
          </ul>
       </div>
    </aside>

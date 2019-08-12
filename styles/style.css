@@ -194,12 +194,12 @@ input[type='submit'],
 button {
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
+  line-height: 1.25em;
 }
 
 h1 {
   font-size: 4.5rem;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
-  line-height: 1.25em;
 }
 
 h2 {
@@ -270,6 +270,46 @@ nav {
   padding: 5% 0;
 }
 
+.bar-menu {
+  z-index: 15;
+  display: none;
+}
+
+.bar-menu-links {
+  position: fixed;
+  top: 4rem;
+  background: rgba(234, 254, 252, 0.9);
+  border: 2px solid rgba(13, 69, 127, 0.9);
+  z-index: 15;
+}
+
+.bar-menu-link {
+  padding: 0.5rem;
+}
+
+.bar-menu-link a {
+  color: #0d457f;
+  text-transform: uppercase;
+}
+
+label.bar-menu {
+  opacity: 0.95;
+  font-size: 25px;
+  color: #fdd908;
+  position: fixed;
+  text-shadow: 2px 2px 1px black;
+}
+
+label.bar-menu:hover,
+label.bar-menu:focus {
+  cursor: pointer;
+  border: 2px dashed #fdd908;
+}
+
+input.bar-menu:checked + .bar-menu-links {
+  display: block;
+}
+
 p {
   margin-top: 0;
 }
@@ -314,11 +354,13 @@ input[type='submit'] {
   font-weight: 700;
 }
 
-.nav-bar-link:hover a {
+.nav-bar-link:hover a,
+.bar-menu-link:hover a {
   border-bottom: 2px solid #fdd908;
 }
 
-.nav-bar-link a:focus {
+.nav-bar-link a:focus,
+.bar-menu-link a:focus {
   border-bottom: 2px solid #fdd908;
 }
 
@@ -490,8 +532,8 @@ footer {
 }
 
 .extra {
-  padding: 15% 0 10%;
-  max-width: 964px;
+  padding: 15% 5% 10%;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -768,4 +810,170 @@ input[name='post-comment']:focus {
   background-color: #fff;
   color: #0d457f;
   border: 2px dashed;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    width: 90%;
+  }
+  h1 {
+    font-size: 4.2rem;
+  }
+  .home-header-image-box {
+    width: 50%;
+    bottom: -10%;
+  }
+  .news-image1 {
+    top: -5%;
+  }
+  .news-image2 {
+    bottom: -5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-header-image-box {
+    display: none;
+  }
+  .home-header {
+    height: 55vh;
+  }
+  .highlights {
+    padding: 5% 0 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .news-post {
+    width: 48%;
+  }
+  .news-image1 {
+    position: initial;
+    -webkit-box-shadow: 10px 10px 0 #fdd908;
+            box-shadow: 10px 10px 0 #fdd908;
+  }
+  .news-image2 {
+    position: initial;
+    -webkit-box-shadow: -10px 10px 0 #fdd908;
+            box-shadow: -10px 10px 0 #fdd908;
+  }
+  .win-image {
+    -webkit-box-shadow: 10px 10px 0 #fdd908;
+            box-shadow: 10px 10px 0 #fdd908;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+    width: 92.5%;
+  }
+  .nav-bar {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 652px) {
+  h1 {
+    text-align: center;
+  }
+  .highlight-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .win-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .win-image-box {
+    margin-bottom: 5%;
+  }
+  .win-text-box {
+    width: 100%;
+    text-align: center;
+  }
+  .highlight {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  label.bar-menu {
+    display: block;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .home-header {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .news-flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news-post {
+    width: 100%;
+  }
+  .news-image {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .news-post2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-text {
+    padding: 5% 10%;
+  }
+  .win-image-box {
+    display: none;
+  }
+  .gallery-photo-container1 {
+    display: none;
+  }
+  .gallery-photo-container {
+    width: 48%;
+  }
+}
+
+@media (max-width: 440px) {
+  .highlight {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .highlight-text-box {
+    padding: 5% 0 0;
+  }
+  .highlight-icon {
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
+  }
 }

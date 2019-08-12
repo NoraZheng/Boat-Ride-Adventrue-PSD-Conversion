@@ -13,12 +13,12 @@ input[type='submit'],
 button {
 	font-family: 'IM Fell English', serif;
 	text-transform: uppercase;
+	line-height: 1.25em;
 }
 
 h1 {
 	font-size: 4.5rem;
 	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
-	line-height: 1.25em;
 }
 
 h2 {
@@ -78,10 +78,44 @@ nav {
 	padding: 5% 0;
 }
 
+.bar-menu {
+	z-index: 15;
+	display: none;
+}
+.bar-menu-links {
+	position: fixed;
+	top: 4rem;
+	background: $bg-tp;
+	border: 2px solid $mc-tp;
+	z-index: 15;
+}
+.bar-menu-link {
+	padding: 0.5rem;
+}
+.bar-menu-link a {
+	color: $main-color;
+	text-transform: uppercase;
+}
+label.bar-menu {
+	opacity: 0.95;
+	font-size: 25px;
+	color: $hl-color;
+	position: fixed;
+	text-shadow: 2px 2px 1px black;
+}
+label.bar-menu:hover,
+label.bar-menu:focus {
+	cursor: pointer;
+	border: 2px dashed $hl-color;
+}
+
+input.bar-menu:checked + .bar-menu-links {
+	display: block;
+}
+
 p {
 	margin-top: 0;
 }
-
 input {
 	padding: 0.75rem;
 }
@@ -122,11 +156,13 @@ input[type='submit'] {
 	font-weight: 700;
 }
 
-.nav-bar-link:hover a {
+.nav-bar-link:hover a,
+.bar-menu-link:hover a {
 	border-bottom: 2px solid $hl-color;
 }
 
-.nav-bar-link a:focus {
+.nav-bar-link a:focus,
+.bar-menu-link a:focus {
 	border-bottom: 2px solid $hl-color;
 }
 footer {
