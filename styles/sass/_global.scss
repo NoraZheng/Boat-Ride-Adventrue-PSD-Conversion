@@ -82,6 +82,7 @@ nav {
 .bar-menu {
 	z-index: 15;
 	display: none;
+	text-align: center;
 }
 .bar-menu-links {
 	position: fixed;
@@ -118,7 +119,7 @@ p {
 	margin-top: 0;
 }
 input {
-	padding: 0.75rem;
+	padding: 0.5rem;
 }
 
 textarea {

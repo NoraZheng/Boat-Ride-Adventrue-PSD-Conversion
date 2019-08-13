@@ -31,6 +31,9 @@
 	.highlights {
 		padding: 5% 0 0;
 	}
+	.contact-main {
+		margin-bottom: -10%;
+	}
 }
 
 @media (max-width: 960px) {
@@ -116,11 +119,41 @@
 	.post-comment {
 		padding: 5%;
 	}
+	.contact-header {
+		height: initial;
+	}
+	.contact-box {
+		padding: 0;
+		width: 36%;
+	}
+	.contact-form {
+		background: none;
+		box-shadow: none;
+		position: initial;
+		padding: 0;
+		width: 60%;
+	}
+	.contact-main {
+		margin-bottom: initial;
+		padding: 5% 0;
+	}
+	.contact-flex-container {
+		justify-content: space-between;
+		align-items: center;
+	}
+	input[name='message-name'],
+	input[name='message-email'],
+	textarea[name='message'] {
+		color: initial;
+	}
 }
 
 @media (max-width: 652px) {
 	h1 {
 		font-size: 4rem;
+	}
+	.contact-h1 {
+		font-size: 3.6rem;
 	}
 	.highlight-list {
 		justify-content: center;
@@ -143,10 +176,11 @@
 	}
 }
 
-@media (max-width: 540px) {
+@media (max-width: 542px) {
 	html {
 		letter-spacing: 0;
 	}
+
 	.mission {
 		background: linear-gradient($mc-tp, $mc-tp),
 			url(../assets/blog-side-image.jpg) no-repeat;
@@ -173,12 +207,21 @@
 	.header-flex-container {
 		justify-content: space-between;
 	}
+	.contact-flex-container {
+		flex-direction: column-reverse;
+	}
+
 	.nav-bar {
 		display: none;
 	}
 
-	h1 {
+	.home-h1,
+	.contact-h1,
+	.blog-h1 {
 		font-size: 3rem;
+	}
+	.contact-form {
+		width: 90%;
 	}
 
 	h2 {
@@ -218,10 +261,28 @@
 		width: 100%;
 		margin-top: 1rem;
 	}
+	input[name='message-name'],
+	input[name='message-email'] {
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.social-links {
+		width: initial;
+		margin-top: 10%;
+	}
+	.social-icon {
+		margin: 0;
+	}
+	.contact-box {
+		text-align: center;
+		width: initial;
+	}
 }
 
 @media (max-width: 440px) {
-	h1 {
+	.contact-h1,
+	.home-h1,
+	.blog-h1 {
 		font-size: 2.8rem;
 	}
 	.highlight {

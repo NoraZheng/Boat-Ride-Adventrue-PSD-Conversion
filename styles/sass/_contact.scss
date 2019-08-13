@@ -7,7 +7,9 @@
 .blog-h1 {
 	color: $white;
 }
-
+.contact-main {
+	margin-bottom: -5%;
+}
 .contact-flex-container {
 	display: flex;
 }
@@ -20,6 +22,9 @@
 	width: 40%;
 	display: flex;
 	justify-content: space-between;
+}
+.social-icon {
+	margin-right: 10%;
 }
 
 .fab {

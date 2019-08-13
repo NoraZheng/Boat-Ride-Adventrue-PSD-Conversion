@@ -274,6 +274,7 @@ nav {
 .bar-menu {
   z-index: 15;
   display: none;
+  text-align: center;
 }
 
 .bar-menu-links {
@@ -316,7 +317,7 @@ p {
 }
 
 input {
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 textarea {
@@ -594,6 +595,10 @@ footer {
   color: #fff;
 }
 
+.contact-main {
+  margin-bottom: -5%;
+}
+
 .contact-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -613,6 +618,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.social-icon {
+  margin-right: 10%;
 }
 
 .fab {
@@ -846,6 +855,9 @@ input[name='post-comment']:focus {
   .highlights {
     padding: 5% 0 0;
   }
+  .contact-main {
+    margin-bottom: -10%;
+  }
 }
 
 @media (max-width: 960px) {
@@ -947,11 +959,46 @@ input[name='post-comment']:focus {
   .post-comment {
     padding: 5%;
   }
+  .contact-header {
+    height: initial;
+  }
+  .contact-box {
+    padding: 0;
+    width: 36%;
+  }
+  .contact-form {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: initial;
+    padding: 0;
+    width: 60%;
+  }
+  .contact-main {
+    margin-bottom: initial;
+    padding: 5% 0;
+  }
+  .contact-flex-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  input[name='message-name'],
+  input[name='message-email'],
+  textarea[name='message'] {
+    color: initial;
+  }
 }
 
 @media (max-width: 652px) {
   h1 {
     font-size: 4rem;
+  }
+  .contact-h1 {
+    font-size: 3.6rem;
   }
   .highlight-list {
     -webkit-box-pack: center;
@@ -979,7 +1026,7 @@ input[name='post-comment']:focus {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 542px) {
   html {
     letter-spacing: 0;
   }
@@ -1015,11 +1062,22 @@ input[name='post-comment']:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .contact-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .nav-bar {
     display: none;
   }
-  h1 {
+  .home-h1,
+  .contact-h1,
+  .blog-h1 {
     font-size: 3rem;
+  }
+  .contact-form {
+    width: 90%;
   }
   h2 {
     font-size: 1.8rem;
@@ -1064,10 +1122,28 @@ input[name='post-comment']:focus {
     width: 100%;
     margin-top: 1rem;
   }
+  input[name='message-name'],
+  input[name='message-email'] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .social-links {
+    width: initial;
+    margin-top: 10%;
+  }
+  .social-icon {
+    margin: 0;
+  }
+  .contact-box {
+    text-align: center;
+    width: initial;
+  }
 }
 
 @media (max-width: 440px) {
-  h1 {
+  .contact-h1,
+  .home-h1,
+  .blog-h1 {
     font-size: 2.8rem;
   }
   .highlight {
