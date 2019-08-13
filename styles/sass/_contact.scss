@@ -2,6 +2,7 @@
 	background: url(../assets/contact-header.jpg) no-repeat;
 	background-size: cover;
 	height: 70vh;
+	min-height: 500px;
 }
 .contact-h1,
 .blog-h1 {
@@ -9,6 +10,7 @@
 }
 .contact-flex-container {
 	display: flex;
+	flex-direction: row-reverse;
 }
 
 .contact-box {

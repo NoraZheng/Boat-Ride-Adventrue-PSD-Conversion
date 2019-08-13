@@ -4,15 +4,12 @@
 	height: 70vh;
 }
 
-.blog-body {
-	background-color: $bg-color;
-}
-
 .blog-flex-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
 .mission {
 	background-color: $main-color;
 	flex: 1 0 25%;

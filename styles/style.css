@@ -596,6 +596,7 @@ footer {
   background: url(../assets/contact-header.jpg) no-repeat;
   background-size: cover;
   height: 70vh;
+  min-height: 500px;
 }
 
 .contact-h1,
@@ -607,6 +608,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .contact-box {
@@ -681,10 +686,6 @@ input[name='message-submit']:focus,
   background: url(../assets/blog-header.jpg) no-repeat;
   background-size: cover;
   height: 70vh;
-}
-
-.blog-body {
-  background-color: #eafefc;
 }
 
 .blog-flex-container {
@@ -962,6 +963,7 @@ input[name='post-comment']:focus {
   }
   .contact-header {
     height: initial;
+    min-height: unset;
   }
   .contact-box {
     padding: 0;
@@ -991,6 +993,11 @@ input[name='post-comment']:focus {
   input[name='message-email'],
   textarea[name='message'] {
     color: initial;
+  }
+  input[name='message-name'],
+  input[name='message-email'] {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 
@@ -1121,11 +1128,6 @@ input[name='post-comment']:focus {
   }
   input[name='comment-name'],
   input[name='comment-email'] {
-    width: 100%;
-    margin-top: 1rem;
-  }
-  input[name='message-name'],
-  input[name='message-email'] {
     width: 100%;
     margin-top: 1rem;
   }

@@ -116,8 +116,10 @@
 	.post-comment {
 		padding: 5%;
 	}
+
 	.contact-header {
 		height: initial;
+		min-height: unset;
 	}
 	.contact-box {
 		padding: 0;
@@ -142,6 +144,11 @@
 	input[name='message-email'],
 	textarea[name='message'] {
 		color: initial;
+	}
+	input[name='message-name'],
+	input[name='message-email'] {
+		width: 100%;
+		margin-top: 1rem;
 	}
 }
 
@@ -256,11 +263,6 @@
 	}
 	input[name='comment-name'],
 	input[name='comment-email'] {
-		width: 100%;
-		margin-top: 1rem;
-	}
-	input[name='message-name'],
-	input[name='message-email'] {
 		width: 100%;
 		margin-top: 1rem;
 	}
