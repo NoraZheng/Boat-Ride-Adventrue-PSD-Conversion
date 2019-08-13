@@ -1,14 +1,20 @@
+//Did mobile-first design for Project-1, for Project-2 I'm doing desktop-first, starting from 1440 x 900
+//for smaller desktop
 @media (max-width: 1280px) {
+	//GLOBAL:
 	.wrapper {
 		width: 90%;
 	}
 	h1 {
 		font-size: 4.2rem;
 	}
+	//HOME PAGE:
+	//home header
 	.home-header-image-box {
 		width: 50%;
 		bottom: -10%;
 	}
+	//section.news
 	.news-image-1 {
 		top: -5%;
 	}
@@ -17,23 +23,31 @@
 	}
 }
 
+//for tablet
 @media (max-width: 1024px) {
-	.home-header-image-box {
-		display: none;
-	}
+	//HOME PAGE:
+	//home header
 	.home-header {
 		height: initial;
 	}
-	.blog-header {
-		height: initial;
+	.home-header-image-box {
+		display: none;
 	}
-
+	// section.highlights
 	.highlights {
 		padding: 5% 0 0;
 	}
+	//BLOG PAGE:
+	//blog header
+	.blog-header {
+		height: initial;
+	}
 }
 
+//adding a breakpoint
 @media (max-width: 960px) {
+	// HOME PAGE:
+	//section.news
 	.news-post {
 		width: 48%;
 	}
@@ -45,28 +59,33 @@
 		position: initial;
 		box-shadow: -10px 10px 0 $hl-color;
 	}
+	//section.win
 	.win-image {
 		box-shadow: 10px 10px 0 $hl-color;
 	}
 }
 
 @media (max-width: 768px) {
+	// GLOBAL:
 	h1 {
 		text-align: center;
 	}
 	.wrapper {
 		width: 92.5%;
 	}
+
 	.nav-bar {
 		width: 100%;
 		justify-content: space-around;
 	}
 
+	// BLOG PAGE:
+	//blog layout
 	.blog-flex-container {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
-
+	// aside.mission
 	.mission {
 		max-width: 95%;
 		background: none;
@@ -84,7 +103,7 @@
 		padding: 2.5%;
 		margin-bottom: 0;
 	}
-
+	// section.blog-box styling and layout
 	.blog-box {
 		max-width: 95%;
 	}
@@ -103,7 +122,6 @@
 	.blog-image {
 		box-shadow: none;
 	}
-
 	.blog-text-box {
 		padding: 10% 5% 0;
 	}
@@ -117,20 +135,10 @@
 		padding: 5%;
 	}
 
+	// CONTACT PAGE:
 	.contact-header {
 		height: initial;
 		min-height: unset;
-	}
-	.contact-box {
-		padding: 0;
-		width: 36%;
-	}
-	.contact-form {
-		background: none;
-		box-shadow: none;
-		position: initial;
-		padding: 0;
-		width: 60%;
 	}
 	.contact-main {
 		margin-bottom: initial;
@@ -139,6 +147,18 @@
 	.contact-flex-container {
 		justify-content: space-between;
 		align-items: center;
+	}
+	.contact-box {
+		padding: 0;
+		width: 36%;
+	}
+	//form.contact-form rework
+	.contact-form {
+		background: none;
+		box-shadow: none;
+		position: initial;
+		padding: 0;
+		width: 60%;
 	}
 	input[name='message-name'],
 	input[name='message-email'],
@@ -153,21 +173,25 @@
 }
 
 @media (max-width: 652px) {
+	//GLOBAL:
 	h1 {
-		font-size: 4rem;
-	}
-	.contact-h1 {
 		font-size: 3.6rem;
 	}
+
+	//HOME PAGE:
+	//section.highlights
 	.highlight-list {
 		justify-content: center;
 	}
+	.highlight {
+		width: 90%;
+	}
 
+	//section.win
 	.win-flex-container {
 		flex-direction: column;
 		align-items: center;
 	}
-
 	.win-image-box {
 		margin-bottom: 5%;
 	}
@@ -175,16 +199,14 @@
 		width: 100%;
 		text-align: center;
 	}
-	.highlight {
-		width: 90%;
-	}
 }
 
 @media (max-width: 542px) {
+	//GLOBAL:
 	html {
 		letter-spacing: 0;
 	}
-
+	//BLOG PAGE
 	.mission {
 		background: linear-gradient($mc-tp, $mc-tp),
 			url(../assets/blog-side-image.jpg) no-repeat;
@@ -204,35 +226,27 @@
 }
 
 @media (max-width: 480px) {
+	//GLOBAL:
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	// display hamburger menu icon and hide ul.nav-bar
 	label.bar-menu,
 	input.bar-menu {
 		display: block;
 	}
-
-	.header-flex-container {
-		justify-content: space-between;
-	}
-	.contact-flex-container {
-		flex-direction: column;
-	}
-
 	.nav-bar {
 		display: none;
 	}
-
-	.home-h1,
-	.contact-h1,
-	.blog-h1 {
-		font-size: 3rem;
+	//HOME PAGE:
+	// home header
+	.header-flex-container {
+		justify-content: space-between;
 	}
-	.contact-form {
-		width: 90%;
-	}
-
-	h2 {
-		font-size: 1.8rem;
-	}
-
+	//home section.news
 	.news-flex-container {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -249,22 +263,34 @@
 	.news-text {
 		padding: 5% 10%;
 	}
+	//home section.win
 	.win-image-box {
 		display: none;
 	}
 	.win-text-box {
 		padding: 0;
 	}
+	//home aside.gallery
 	.gallery-photo-container-1 {
 		display: none;
 	}
 	.gallery-photo-container {
 		width: 48%;
 	}
+	//BLOG PAGE:
 	input[name='comment-name'],
 	input[name='comment-email'] {
 		width: 100%;
 		margin-top: 1rem;
+	}
+
+	// CONTACT PAGE:
+	.contact-flex-container {
+		flex-direction: column;
+	}
+	.contact-box {
+		text-align: center;
+		width: initial;
 	}
 	.social-links {
 		width: initial;
@@ -273,18 +299,19 @@
 	.social-icon {
 		margin: 0;
 	}
-	.contact-box {
-		text-align: center;
-		width: initial;
+	.contact-form {
+		width: 90%;
 	}
 }
 
 @media (max-width: 440px) {
-	.contact-h1,
-	.home-h1,
-	.blog-h1 {
-		font-size: 2.8rem;
+	//GLOBAL:
+	h1 {
+		font-size: 2.4rem;
 	}
+
+	// HOME PAGE:
+	// section.highlights
 	.highlight {
 		text-align: center;
 		flex-direction: column;
@@ -296,6 +323,7 @@
 	.highlight-icon {
 		flex: inherit;
 	}
+	// BLOG PAGE:
 	.comments {
 		padding: 5% 2%;
 	}

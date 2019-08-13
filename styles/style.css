@@ -848,17 +848,17 @@ input[name='post-comment']:focus {
 }
 
 @media (max-width: 1024px) {
-  .home-header-image-box {
-    display: none;
-  }
   .home-header {
     height: initial;
   }
-  .blog-header {
-    height: initial;
+  .home-header-image-box {
+    display: none;
   }
   .highlights {
     padding: 5% 0 0;
+  }
+  .blog-header {
+    height: initial;
   }
 }
 
@@ -965,18 +965,6 @@ input[name='post-comment']:focus {
     height: initial;
     min-height: unset;
   }
-  .contact-box {
-    padding: 0;
-    width: 36%;
-  }
-  .contact-form {
-    background: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: initial;
-    padding: 0;
-    width: 60%;
-  }
   .contact-main {
     margin-bottom: initial;
     padding: 5% 0;
@@ -988,6 +976,18 @@ input[name='post-comment']:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact-box {
+    padding: 0;
+    width: 36%;
+  }
+  .contact-form {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: initial;
+    padding: 0;
+    width: 60%;
   }
   input[name='message-name'],
   input[name='message-email'],
@@ -1003,15 +1003,15 @@ input[name='post-comment']:focus {
 
 @media (max-width: 652px) {
   h1 {
-    font-size: 4rem;
-  }
-  .contact-h1 {
     font-size: 3.6rem;
   }
   .highlight-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .highlight {
+    width: 90%;
   }
   .win-flex-container {
     -webkit-box-orient: vertical;
@@ -1028,9 +1028,6 @@ input[name='post-comment']:focus {
   .win-text-box {
     width: 100%;
     text-align: center;
-  }
-  .highlight {
-    width: 90%;
   }
 }
 
@@ -1062,34 +1059,23 @@ input[name='post-comment']:focus {
 }
 
 @media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
   label.bar-menu,
   input.bar-menu {
     display: block;
+  }
+  .nav-bar {
+    display: none;
   }
   .header-flex-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .contact-flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav-bar {
-    display: none;
-  }
-  .home-h1,
-  .contact-h1,
-  .blog-h1 {
-    font-size: 3rem;
-  }
-  .contact-form {
-    width: 90%;
-  }
-  h2 {
-    font-size: 1.8rem;
   }
   .news-flex-container {
     -ms-flex-wrap: wrap;
@@ -1131,6 +1117,16 @@ input[name='post-comment']:focus {
     width: 100%;
     margin-top: 1rem;
   }
+  .contact-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-box {
+    text-align: center;
+    width: initial;
+  }
   .social-links {
     width: initial;
     margin-top: 10%;
@@ -1138,17 +1134,14 @@ input[name='post-comment']:focus {
   .social-icon {
     margin: 0;
   }
-  .contact-box {
-    text-align: center;
-    width: initial;
+  .contact-form {
+    width: 90%;
   }
 }
 
 @media (max-width: 440px) {
-  .contact-h1,
-  .home-h1,
-  .blog-h1 {
-    font-size: 2.8rem;
+  h1 {
+    font-size: 2.4rem;
   }
   .highlight {
     text-align: center;
