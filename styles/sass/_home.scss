@@ -46,7 +46,7 @@
 	border: 25px $hl-color solid;
 	border-radius: 50%;
 	font-size: 1.8rem;
-	color: $main-color;
+	color: $m-color;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,7 +63,7 @@
 }
 
 .news {
-	background-color: $main-color;
+	background-color: $m-color;
 	color: $white;
 }
 .news-flex-container {
@@ -139,7 +139,7 @@
 }
 
 .gallery {
-	background: $main-color;
+	background: $m-color;
 	padding: 5% 0;
 }
 .gallery-flex-container {

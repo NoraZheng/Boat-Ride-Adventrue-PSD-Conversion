@@ -18,12 +18,12 @@ button {
 
 h1 {
 	font-size: 4.5rem;
-	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+	text-shadow: 2px 2px 1px $t-shadow;
 }
 
 h2 {
 	font-size: 2rem;
-	color: $main-color;
+	color: $m-color;
 	font-weight: 400;
 	margin-top: 0;
 }
@@ -85,14 +85,14 @@ input.bar-menu,
 }
 label.bar-menu {
 	padding: 5px;
-	border: 1px solid $main-color;
-	background: $main-color;
+	border: 1px solid $m-color;
+	background: $m-color;
 	opacity: 0.9;
 	font-size: 25px;
 	color: $white;
 	position: fixed;
 	top: 10px;
-	text-shadow: 2px 2px 1px black;
+	text-shadow: 2px 2px 1px $t-shadow;
 }
 
 input.bar-menu {
@@ -128,7 +128,7 @@ input.bar-menu:checked ~ .bar-menu-links {
 		padding: 0.5rem;
 
 		a {
-			color: $main-color;
+			color: $m-color;
 			text-transform: uppercase;
 		}
 	}
@@ -150,7 +150,7 @@ input[type='text'],
 input[type='email'] {
 	width: 45%;
 	border: none;
-	border: 2px rgba(0, 0, 0, 0) solid;
+	border: 2px transparent solid;
 	border-bottom: 2px $hl-color solid;
 	background: transparent;
 }
@@ -170,6 +170,7 @@ input[type='submit'] {
 
 .nav-bar-link a {
 	color: $white;
+	text-shadow: 2px 1px $t-shadow;
 	padding: 0.5rem;
 	font-weight: 700;
 }
@@ -187,5 +188,5 @@ footer {
 	padding: 10px 0;
 	text-align: center;
 	background: $hl-color;
-	color: $main-color;
+	color: $m-color;
 }
