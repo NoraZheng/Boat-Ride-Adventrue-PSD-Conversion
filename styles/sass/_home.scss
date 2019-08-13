@@ -76,12 +76,12 @@
 	position: relative;
 	width: 45%;
 }
-.news-post1 {
+.news-post-1 {
 	flex-direction: column;
 	text-align: right;
 }
 
-.news-post2 {
+.news-post-2 {
 	flex-direction: column-reverse;
 
 	text-align: left;
@@ -93,20 +93,20 @@
 	padding: 0.5rem;
 }
 
-.news-text1 {
+.news-text-1 {
 	padding: 10% 0 10% 12.5%;
 }
-.news-text2 {
+.news-text-2 {
 	padding: 10% 12.5% 10% 0%;
 }
 
-.news-image1 {
+.news-image-1 {
 	position: relative;
 	top: -10%;
 	box-shadow: 20px 20px 0 $hl-color;
 }
 
-.news-image2 {
+.news-image-2 {
 	position: relative;
 	bottom: -10%;
 	box-shadow: -20px 20px 0 $hl-color;
