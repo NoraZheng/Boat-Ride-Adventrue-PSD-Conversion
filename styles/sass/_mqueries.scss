@@ -31,9 +31,6 @@
 	.highlights {
 		padding: 5% 0 0;
 	}
-	.contact-main {
-		margin-bottom: -10%;
-	}
 }
 
 @media (max-width: 960px) {
@@ -200,7 +197,8 @@
 }
 
 @media (max-width: 480px) {
-	label.bar-menu {
+	label.bar-menu,
+	input.bar-menu {
 		display: block;
 	}
 
@@ -208,7 +206,7 @@
 		justify-content: space-between;
 	}
 	.contact-flex-container {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	.nav-bar {
