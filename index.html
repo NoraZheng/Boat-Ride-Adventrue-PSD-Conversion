@@ -18,33 +18,37 @@
 
 <body>
    <header class="home-header">
-      <div class="wrapper  home-header-flex-container">
-         <nav>
-            <input name="bar-menu" class="bar-menu" id="bar-menu" type="checkbox">
-            <label class="bar-menu" for="bar-menu">
-               <span class="sr-only">navigation menu</span>
-               <i class="fas fa-bars"></i>
-            </label>
-            <ul class="bar-menu bar-menu-links">
-               <li class="bar-menu-link"><a href="./index.html">Home</a></li>
-               <li class="bar-menu-link"><a href="#about">About</a></li>
-               <li class="bar-menu-link"><a href="./blog.html">Blog</a></li>
-               <li class="bar-menu-link"><a href="./contact.html">Contact</a></li>
-            </ul>
-            <ul class="nav-bar">
-               <li class="nav-bar-link"><a href="./index.html">Home</a></li>
-               <li class="nav-bar-link"><a href="#about">About</a></li>
-               <li class="nav-bar-link"><a href="./blog.html">Blog</a></li>
-               <li class="nav-bar-link"><a href="./contact.html">Contact</a></li>
-            </ul>
-         </nav>
-         <h1 class="home-h1">boat ride<br>adventures</h1>
+      <div class="home-wrapper">
+         <div class="wrapper home-header-flex-container">
+            <nav>
+               <input name="bar-menu" class="bar-menu" id="bar-menu" type="checkbox">
+               <label class="bar-menu" for="bar-menu">
+                  <span class="sr-only">navigation menu</span>
+                  <i class="fas fa-bars"></i>
+               </label>
+               <ul class="bar-menu bar-menu-links">
+                  <li class="bar-menu-link"><a href="./index.html">Home</a></li>
+                  <li class="bar-menu-link"><a href="#about">About</a></li>
+                  <li class="bar-menu-link"><a href="./blog.html">Blog</a></li>
+                  <li class="bar-menu-link"><a href="./contact.html">Contact</a></li>
+               </ul>
+               <ul class="nav-bar">
+                  <li class="nav-bar-link"><a href="./index.html">Home</a></li>
+                  <li class="nav-bar-link"><a href="#about">About</a></li>
+                  <li class="nav-bar-link"><a href="./blog.html">Blog</a></li>
+                  <li class="nav-bar-link"><a href="./contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            <h1 class="home-h1">boat ride<br>adventures</h1>
+
+         </div>
+         <!-- end of header wrapper -->
+         <div class="home-header-image-box">
+            <img class="home-header-image" src="./assets/home-box-header.png"
+               alt="a white cruise ship sailing on blue, wavy water">
+         </div>
       </div>
-      <!-- end of header wrapper -->
-      <div class="home-header-image-box">
-         <img class="home-header-image" src="./assets/home-box-header.png"
-            alt="a white cruise ship sailing on blue, wavy water">
-      </div>
+      <!-- end of home big wrapper -->
    </header>
    <main class="home-main">
       <section class="highlights">
@@ -140,7 +144,7 @@
       </section>
       <!-- end of extra section -->
       <section class="win">
-         <div>
+         <div class="home-wrapper">
             <img class="banner" src="./assets/banner.jpg"
                alt="people rowing in small boats on a turqoise lake surround by mountains">
          </div>

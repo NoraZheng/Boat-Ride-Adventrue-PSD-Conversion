@@ -120,7 +120,7 @@
 	}
 	.blog-image-box {
 		position: initial;
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 5%;
 		border-bottom: 4px solid $hl-color;
@@ -143,8 +143,9 @@
 
 	// CONTACT PAGE:
 	.contact-header {
-		height: 35vh;
-		min-height: 300px;
+		height: auto;
+		min-height: 250px;
+		max-height: 450px;
 	}
 	.contact-main {
 		margin-bottom: 0;
@@ -170,6 +171,7 @@
 	input[name='message-email'],
 	textarea[name='message'] {
 		color: initial;
+		// border-color: $m-color;
 	}
 	input[name='message-name'],
 	input[name='message-email'] {
@@ -291,6 +293,9 @@
 	}
 
 	// CONTACT PAGE:
+	.contact-header {
+		height: auto;
+	}
 	.contact-flex-container {
 		flex-direction: column;
 	}

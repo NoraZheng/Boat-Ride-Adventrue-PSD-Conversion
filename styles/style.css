@@ -186,6 +186,10 @@ html {
   font-weight: 400;
 }
 
+body {
+  background: #eafefc;
+}
+
 h1,
 h2,
 h3,
@@ -221,7 +225,8 @@ h3 {
 }
 
 .blog-wrapper,
-.news-wrapper {
+.news-wrapper,
+.home-wrapper {
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -259,10 +264,6 @@ a {
 img {
   width: 100%;
   display: block;
-}
-
-main {
-  background: #eafefc;
 }
 
 ul {
@@ -387,10 +388,17 @@ footer {
   position: relative;
   background-size: cover;
   height: 90vh;
+  max-height: 700px;
 }
 
 .home-h1 {
   color: #fdd908;
+}
+
+.home-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 
 .home-header-flex-container {
@@ -410,7 +418,7 @@ footer {
 .home-header-image-box {
   position: absolute;
   right: 0;
-  bottom: -20%;
+  bottom: -10%;
   width: 55%;
   max-width: 800px;
 }
@@ -606,8 +614,7 @@ footer {
 .contact-header {
   background: url(../assets/contact-header.jpg) no-repeat;
   background-size: cover;
-  height: 70vh;
-  min-height: 500px;
+  height: 65vh;
 }
 
 .contact-h1,
@@ -667,7 +674,7 @@ footer {
   background: #0d457f;
   padding: 7% 5% 5%;
   position: relative;
-  bottom: 20vh;
+  bottom: 15vh;
   -webkit-box-shadow: 25px 25px 0 #fdd908;
           box-shadow: 25px 25px 0 #fdd908;
 }
@@ -810,6 +817,7 @@ input[name='message-submit']:focus,
 }
 
 .comment-title {
+  margin-top: 0;
   font-weight: 700;
   color: #0d457f;
 }
@@ -957,7 +965,7 @@ input[name='post-comment']:focus {
   }
   .blog-image-box {
     position: initial;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 5%;
     border-bottom: 4px solid #fdd908;
@@ -979,8 +987,9 @@ input[name='post-comment']:focus {
     padding: 5%;
   }
   .contact-header {
-    height: 35vh;
-    min-height: 300px;
+    height: auto;
+    min-height: 250px;
+    max-height: 450px;
   }
   .contact-main {
     margin-bottom: 0;
@@ -1133,6 +1142,9 @@ input[name='post-comment']:focus {
   input[name='comment-email'] {
     width: 100%;
     margin-top: 1rem;
+  }
+  .contact-header {
+    height: auto;
   }
   .contact-flex-container {
     -webkit-box-orient: vertical;

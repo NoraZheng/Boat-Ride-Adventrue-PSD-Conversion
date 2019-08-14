@@ -3,9 +3,16 @@
 	position: relative;
 	background-size: cover;
 	height: 90vh;
+	max-height: 700px;
 }
 .home-h1 {
 	color: $hl-color;
+}
+
+.home-wrapper {
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
 }
 .home-header-flex-container {
 	height: 100%;
@@ -17,7 +24,7 @@
 .home-header-image-box {
 	position: absolute;
 	right: 0;
-	bottom: -20%;
+	bottom: -10%;
 	width: 55%;
 	max-width: 800px;
 }
@@ -118,6 +125,7 @@
 	margin: 0 auto;
 	text-align: center;
 }
+
 .banner {
 	object-fit: cover;
 	min-height: 200px;

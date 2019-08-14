@@ -4,6 +4,9 @@ html {
 	line-height: 1.5rem;
 	font-weight: 400;
 }
+body {
+	background: $bg-color;
+}
 
 h1,
 h2,
@@ -40,7 +43,8 @@ h3 {
 }
 
 .blog-wrapper,
-.news-wrapper {
+.news-wrapper,
+.home-wrapper {
 	margin: 0 auto;
 	max-width: 1440px;
 }
@@ -68,9 +72,7 @@ img {
 	width: 100%;
 	display: block;
 }
-main {
-	background: $bg-color;
-}
+
 ul {
 	list-style: none;
 	padding-left: 0;
