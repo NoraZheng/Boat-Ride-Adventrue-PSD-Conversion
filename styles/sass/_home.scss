@@ -118,15 +118,21 @@
 	margin: 0 auto;
 	text-align: center;
 }
+.banner {
+	object-fit: cover;
+	min-height: 200px;
+}
 
 .win-flex-container {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 10% 0;
 }
 
 .win-image-box {
 	width: 30%;
+	min-width: 200px;
 	max-width: 300px;
 }
 .win-image {

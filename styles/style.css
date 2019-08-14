@@ -549,6 +549,12 @@ footer {
   text-align: center;
 }
 
+.banner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 200px;
+}
+
 .win-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,11 +562,15 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10% 0;
 }
 
 .win-image-box {
   width: 30%;
+  min-width: 200px;
   max-width: 300px;
 }
 
@@ -887,8 +897,14 @@ input[name='post-comment']:focus {
   h1 {
     text-align: center;
   }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.55rem;
+  }
   .wrapper {
-    width: 92.5%;
+    width: 95%;
   }
   .nav-bar {
     width: 100%;
@@ -941,7 +957,7 @@ input[name='post-comment']:focus {
   }
   .blog-image-box {
     position: initial;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 5%;
     border-bottom: 4px solid #fdd908;
@@ -963,11 +979,11 @@ input[name='post-comment']:focus {
     padding: 5%;
   }
   .contact-header {
-    height: initial;
-    min-height: unset;
+    height: 35vh;
+    min-height: 300px;
   }
   .contact-main {
-    margin-bottom: initial;
+    margin-bottom: 0;
     padding: 5% 0;
   }
   .contact-flex-container {
@@ -1002,7 +1018,7 @@ input[name='post-comment']:focus {
   }
 }
 
-@media (max-width: 652px) {
+@media (max-width: 684px) {
   h1 {
     font-size: 3.6rem;
   }

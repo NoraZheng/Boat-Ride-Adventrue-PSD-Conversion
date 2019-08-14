@@ -70,8 +70,14 @@
 	h1 {
 		text-align: center;
 	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	h3 {
+		font-size: 1.55rem;
+	}
 	.wrapper {
-		width: 92.5%;
+		width: 95%;
 	}
 
 	.nav-bar {
@@ -114,7 +120,7 @@
 	}
 	.blog-image-box {
 		position: initial;
-		width: 80%;
+		width: 95%;
 		margin: 0 auto;
 		padding: 5%;
 		border-bottom: 4px solid $hl-color;
@@ -137,11 +143,11 @@
 
 	// CONTACT PAGE:
 	.contact-header {
-		height: initial;
-		min-height: unset;
+		height: 35vh;
+		min-height: 300px;
 	}
 	.contact-main {
-		margin-bottom: initial;
+		margin-bottom: 0;
 		padding: 5% 0;
 	}
 	.contact-flex-container {
@@ -172,7 +178,7 @@
 	}
 }
 
-@media (max-width: 652px) {
+@media (max-width: 684px) {
 	//GLOBAL:
 	h1 {
 		font-size: 3.6rem;
