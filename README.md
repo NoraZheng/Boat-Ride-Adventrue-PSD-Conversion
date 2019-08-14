@@ -1,5 +1,4 @@
-# nora-zheng-project-two
-HackerYou Bootcamp Summer 2019 Project 02: multi-page PSD conversion
+Nora Zheng HackerYou Bootcamp Summer 2019 Project 02: multi-page PSD conversion
 Design: Boat Ride Adventures
 <br>
 Known issues: 
